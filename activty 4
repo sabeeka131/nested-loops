@@ -1,0 +1,28 @@
+def decimal_to_binary(n):
+ bin = ""
+ n = int()
+while n > 0:
+ bin = str(n % 2) + bin
+n = n // 2
+ 
+decimal_number = int(input("Please enter a decimal number: "))
+
+
+binary_representation= decimal_to_binary(decimal_number)
+print("The binary representation of", decimal_number, "is: binary_representation")
+
+def decimal_to_binary(n):
+ bin = ""
+while n > 0:
+ bin = str(n % 2) + bin
+n = n // 2
+return bin
+
+# Take input from the user
+decimal_number = int(input("Please enter a decimal number: "))
+
+# Get the binary representation
+binary_representation = decimal_to_binary(decimal_number)
+
+# Display the result
+print("The binary representation of", decimal_number, "is:", binary_representation)
